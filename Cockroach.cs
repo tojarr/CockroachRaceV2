@@ -9,9 +9,9 @@ namespace CockroachRaceV2
 {
     public class Cockroach
     {
-        string Name { get; set; }
+        public string Name { get; set; }
         int Speed { get; set; }
-        int Distance  { get; }
+        public int Distance  { get; }
         int count = 0;
         //public int time;
         Random rnd = new Random(DateTime.Now.Millisecond);
