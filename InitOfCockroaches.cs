@@ -15,15 +15,13 @@ namespace CockroachRaceV2
             _numberOfCocroach = n;
         }
 
-        public List<Cockroach> GetCockroaches()
+        public void InitCockroaches()
         {
-            List<Cockroach> list = new List<Cockroach>();
             for (int i = 0; i < _numberOfCocroach; i++)
             {
                 Cockroach cockroach = new Cockroach(i + 1);
-                list.Add(cockroach);
+                Cockroaches.AllCockroaches.Add(cockroach);
             }
-            return list;
         }
     }
 }
