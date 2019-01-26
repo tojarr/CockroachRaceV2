@@ -13,9 +13,10 @@ namespace CockroachRaceV2
         public InitOfCockroaches(int n)
         {
             _numberOfCocroach = n;
+            InitCockroaches();
         }
 
-        public void InitCockroaches()
+        void InitCockroaches()
         {
             for (int i = 0; i < _numberOfCocroach; i++)
             {
