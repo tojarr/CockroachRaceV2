@@ -27,4 +27,9 @@ namespace CockroachRaceV2
         {
         }
     }
+
+    public static class Cockroaches
+    {
+        public static List<Cockroach> AllCockroaches = new List<Cockroach>();
+    }
 }
